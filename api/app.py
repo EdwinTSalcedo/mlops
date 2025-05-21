@@ -7,8 +7,7 @@ import numpy as np
 import tensorflow as tf
 
 app = Flask(__name__)
-
-model = tf.keras.models.load_model('ml/my_model')
+model = tf.keras.models.load_model('ml/my_model.keras')
 
 @app.route('/',methods=["Get","POST"])
 def home():
